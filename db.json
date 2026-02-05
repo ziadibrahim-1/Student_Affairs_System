@@ -1,0 +1,9 @@
+
+{
+  "employees": [
+    { "id": 1, "username": "admin", "password": "1234", "name": "Admin User" }
+  ],
+  "students": [],
+  "courses": [],
+  "instructors": []
+}
