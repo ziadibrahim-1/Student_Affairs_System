@@ -4,9 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Affairs System</title>
+    <link rel="stylesheet" href="./css/auth.css">
+    <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
     
     <script type="module" src="./src/main.js"></script>
+
+    <div class="app">
+  <header class="topbar">
+    <h1>Student Affairs System</h1>
+    <p>Add, edit, delete, and search table entries with real-time updates</p>
+  </header>
+
+  <section class="toolbar">
+    <div class="left">
+      <input id="searchInput" type="text" placeholder="Search in table by name..." />
+      <select id="entitySelect">
+        <option value="students" selected>Students</option>
+        <option value="courses">Courses</option>
+        <option value="instructors">Instructors</option>
+        <option value="employees">Employees</option>
+      </select>
+    </div>
+
+    <button id="addBtn" class="btn btn-primary">+ Add New Row</button>
+  </section>
+
+  <section class="tablewrap">
+    <table class="table" id="dataTable">
+      <thead>
+        <tr>
+          <th class="chk"><input type="checkbox" id="checkAll" /></th>
+          <th data-sort="id">Id</th>
+          <th data-sort="name">Name</th>
+          <th data-sort="age">Age</th>
+          <th data-sort="salary">Salary</th>
+          <th data-sort="phone">Phone</th>
+          <th data-sort="email">Email</th>
+          <th data-sort="department">Department</th>
+          <th class="actions">Actions</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </section>
+
+  <section class="pager">
+    <span id="pageLabel">Page 1</span>
+    <div class="pagerBtns">
+      <button id="prevBtn" class="btn" disabled>Previous</button>
+      <button id="nextBtn" class="btn btn-primary">Next</button>
+    </div>
+  </section>
+</div>
+
+<!-- Modal بسيط -->
+<div class="modal hidden" id="modal">
+  <div class="modal-card">
+    <h3 id="modalTitle">Add Student</h3>
+
+    <div class="grid">
+      <input id="mName" placeholder="Name" />
+      <input id="mAge" type="number" placeholder="Age" />
+      <input id="mSalary" type="number" placeholder="Salary" />
+      <input id="mPhone" placeholder="Phone" />
+      <input id="mEmail" placeholder="Email" />
+      <input id="mDepartment" placeholder="Department" />
+    </div>
+
+    <div class="modal-actions">
+      <button id="cancelBtn" class="btn">Cancel</button>
+      <button id="saveBtn" class="btn btn-primary">Save</button>
+    </div>
+
+    <p class="err" id="modalErr"></p>
+  </div>
+</div>
+
+<script type="module" src="./src/main.js"></script>
+
 </body>
 </html>
