@@ -1,11 +1,62 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Students Affairs | Login</title>
+  <link rel="stylesheet" href="./css/auth.css">
 </head>
-<body>
-    
+
+<body class="auth-body">
+  <main class="auth-wrapper">
+    <section class="auth-card">
+      <div class="auth-brand">
+        <div class="auth-logo" aria-hidden="true">SA</div>
+        <div>
+          <h1>Students Affairs</h1>
+          <p class="muted">Sign in to manage students, courses, instructors & employees</p>
+        </div>
+      </div>
+
+      <form id="loginForm" class="auth-form" novalidate>
+        <label class="field">
+          <span>Username</span>
+          <input id="username" name="username" type="text" placeholder="e.g. admin" autocomplete="username" required />
+        </label>
+
+        <label class="field">
+          <span>Password</span>
+          <div class="password-wrap">
+            <input id="password" name="password" type="password" placeholder="••••••••" autocomplete="current-password" required />
+            <button type="button" id="togglePass" class="ghost-btn" aria-label="Show password">Show</button>
+          </div>
+        </label>
+
+        <button type="submit" class="primary-btn">Login</button>
+
+        <p id="loginError" class="error" role="alert" aria-live="polite"></p>
+      </form>
+
+        <!-- <footer class="auth-footer">
+            <span class="muted">Tip:</span> Default user: <code>admin</code> / <code>1234</code>
+        </footer> -->
+    </section>
+
+    <aside class="auth-side">
+      <h2>Welcome 👋</h2>
+      <p>
+        This system helps Student Affairs staff view and manage data with tables,
+        search, pagination and more.
+      </p>
+      <ul>
+        <li>Fast search & filter</li>
+        <li>CRUD operations</li>
+        <li>Clean modular ES6 code</li>
+      </ul>
+    </aside>
+  </main>
+
+  <script type="module" src="./src/login.js"></script>
 </body>
 </html>
