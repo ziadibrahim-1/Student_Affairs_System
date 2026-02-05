@@ -1,39 +1,25 @@
-
 export default class AuthController {
-  constructor(authService, loginView = null) {
-    this.authService = authService;
-    this.loginView = loginView;
-  }
-
-  requireAuth() {
-    if (!this.authService.isAuthorized()) {
-      window.location.href = "login.html";
-    }
+  constructor(service, view) {
+    this.service = service;
+    this.view = view;
   }
 
   initLoginPage() {
-    // لو already logged in -> روح للـindex
-    if (this.authService.isAuthorized()) {
-      window.location.href = "index.html";
-      return;
-    }
-
-    this.loginView.onSubmit(async ({ username, password }) => {
-      this.loginView.showError("");
-      this.loginView.setLoading(true);
+    this.view.onSubmit(async ({ username, password }) => {
+      this.view.showError("");
+      this.view.setLoading(true);
 
       try {
-        const session = await this.authService.login(username, password);
-        if (!session) {
-          this.loginView.showError("Invalid username or password");
-          return;
-        }
+        await this.service.login(username, password);
         window.location.href = "index.html";
       } catch (e) {
-        this.loginView.showError("Server error. Make sure json-server is running.");
-        console.error(e);
+        if (e?.message === "Invalid credentials") {
+          this.view.showError("Invalid username or password");
+        } else {
+          this.view.showError("Server error. Make sure json-server is running.");
+        }
       } finally {
-        this.loginView.setLoading(false);
+        this.view.setLoading(false);
       }
     });
   }

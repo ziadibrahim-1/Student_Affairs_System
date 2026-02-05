@@ -1,10 +1,155 @@
-
 {
   "employees": [
-    { "id": 1, "username": "admin", "password": "1234", "name": "Admin User" },
-    { "id": 2, "username": "ziad", "password": "1234", "name": "Admin User" }
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "1234",
+      "name": "Admin User"
+    },
+    {
+      "id": "2",
+      "username": "ziad",
+      "password": "1234",
+      "name": "Admin User"
+    }
   ],
-  "students": [],
+  "students": [
+    {
+      "id": "9b15",
+      "name": "Abdallah Rabea Abo Alyazed",
+      "age": 22,
+      "salary": 20000,
+      "phone": "035025994",
+      "email": "abdlaboda4@gmail.com",
+      "department": "IT"
+    },
+    {
+      "id": "9b16",
+      "name": "ziad",
+      "age": 2,
+      "salary": 200,
+      "phone": "50505050",
+      "email": "ziad7b2loz@gmail.com",
+      "department": "IT"
+    },
+        {
+      "id": "9b16",
+      "name": "ziad",
+      "age": 2,
+      "salary": 200,
+      "phone": "50505050",
+      "email": "ziad7b2loz@gmail.com",
+      "department": "IT"
+    },
+        {
+      "id": "9b16",
+      "name": "ziad",
+      "age": 2,
+      "salary": 200,
+      "phone": "50505050",
+      "email": "ziad7b2loz@gmail.com",
+      "department": "IT"
+    },
+        {
+      "id": "9b16",
+      "name": "ziad",
+      "age": 2,
+      "salary": 200,
+      "phone": "50505050",
+      "email": "ziad7b2loz@gmail.com",
+      "department": "IT"
+    },
+        {
+      "id": "9b16",
+      "name": "ziad",
+      "age": 2,
+      "salary": 200,
+      "phone": "50505050",
+      "email": "ziad7b2loz@gmail.com",
+      "department": "IT"
+    },
+        {
+      "id": "9b16",
+      "name": "ziad",
+      "age": 2,
+      "salary": 200,
+      "phone": "50505050",
+      "email": "ziad7b2loz@gmail.com",
+      "department": "IT"
+    },
+        {
+      "id": "9b16",
+      "name": "ziad",
+      "age": 2,
+      "salary": 200,
+      "phone": "50505050",
+      "email": "ziad7b2loz@gmail.com",
+      "department": "IT"
+    },
+        {
+      "id": "9b16",
+      "name": "ziad",
+      "age": 2,
+      "salary": 200,
+      "phone": "50505050",
+      "email": "ziad7b2loz@gmail.com",
+      "department": "IT"
+    },
+        {
+      "id": "9b16",
+      "name": "ziad",
+      "age": 2,
+      "salary": 200,
+      "phone": "50505050",
+      "email": "ziad7b2loz@gmail.com",
+      "department": "IT"
+    },
+        {
+      "id": "9b16",
+      "name": "ziad",
+      "age": 2,
+      "salary": 200,
+      "phone": "50505050",
+      "email": "ziad7b2loz@gmail.com",
+      "department": "IT"
+    },
+        {
+      "id": "9b16",
+      "name": "ziad",
+      "age": 2,
+      "salary": 200,
+      "phone": "50505050",
+      "email": "ziad7b2loz@gmail.com",
+      "department": "IT"
+    },
+        {
+      "id": "9b16",
+      "name": "ziad",
+      "age": 2,
+      "salary": 200,
+      "phone": "50505050",
+      "email": "ziad7b2loz@gmail.com",
+      "department": "IT"
+    },
+        {
+      "id": "9b16",
+      "name": "ziad",
+      "age": 2,
+      "salary": 200,
+      "phone": "50505050",
+      "email": "ziad7b2loz@gmail.com",
+      "department": "IT"
+    },
+        {
+      "id": "9b16",
+      "name": "ziad",
+      "age": 2,
+      "salary": 200,
+      "phone": "50505050",
+      "email": "ziad7b2loz@gmail.com",
+      "department": "IT"
+    }
+  ],
   "courses": [],
   "instructors": []
 }
