@@ -1,7 +1,8 @@
 
 {
   "employees": [
-    { "id": 1, "username": "admin", "password": "1234", "name": "Admin User" }
+    { "id": 1, "username": "admin", "password": "1234", "name": "Admin User" },
+    { "id": 2, "username": "ziad", "password": "1234", "name": "Admin User" }
   ],
   "students": [],
   "courses": [],
