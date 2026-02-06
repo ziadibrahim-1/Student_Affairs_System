@@ -32,124 +32,90 @@
       "email": "ziad7b2loz@gmail.com",
       "department": "IT"
     },
-        {
-      "id": "9b16",
-      "name": "ziad",
-      "age": 2,
-      "salary": 200,
-      "phone": "50505050",
-      "email": "ziad7b2loz@gmail.com",
+    {
+      "id": "db44",
+      "name": "hamada",
+      "age": 22,
+      "salary": 8000,
+      "phone": "01556944841",
+      "email": "A@gmail.com",
       "department": "IT"
     },
-        {
-      "id": "9b16",
-      "name": "ziad",
-      "age": 2,
-      "salary": 200,
-      "phone": "50505050",
-      "email": "ziad7b2loz@gmail.com",
-      "department": "IT"
-    },
-        {
-      "id": "9b16",
-      "name": "ziad",
-      "age": 2,
-      "salary": 200,
-      "phone": "50505050",
-      "email": "ziad7b2loz@gmail.com",
-      "department": "IT"
-    },
-        {
-      "id": "9b16",
-      "name": "ziad",
-      "age": 2,
-      "salary": 200,
-      "phone": "50505050",
-      "email": "ziad7b2loz@gmail.com",
-      "department": "IT"
-    },
-        {
-      "id": "9b16",
-      "name": "ziad",
-      "age": 2,
-      "salary": 200,
-      "phone": "50505050",
-      "email": "ziad7b2loz@gmail.com",
-      "department": "IT"
-    },
-        {
-      "id": "9b16",
-      "name": "ziad",
-      "age": 2,
-      "salary": 200,
-      "phone": "50505050",
-      "email": "ziad7b2loz@gmail.com",
-      "department": "IT"
-    },
-        {
-      "id": "9b16",
-      "name": "ziad",
-      "age": 2,
-      "salary": 200,
-      "phone": "50505050",
-      "email": "ziad7b2loz@gmail.com",
-      "department": "IT"
-    },
-        {
-      "id": "9b16",
-      "name": "ziad",
-      "age": 2,
-      "salary": 200,
-      "phone": "50505050",
-      "email": "ziad7b2loz@gmail.com",
-      "department": "IT"
-    },
-        {
-      "id": "9b16",
-      "name": "ziad",
-      "age": 2,
-      "salary": 200,
-      "phone": "50505050",
-      "email": "ziad7b2loz@gmail.com",
-      "department": "IT"
-    },
-        {
-      "id": "9b16",
-      "name": "ziad",
-      "age": 2,
-      "salary": 200,
-      "phone": "50505050",
-      "email": "ziad7b2loz@gmail.com",
-      "department": "IT"
-    },
-        {
-      "id": "9b16",
-      "name": "ziad",
-      "age": 2,
-      "salary": 200,
-      "phone": "50505050",
-      "email": "ziad7b2loz@gmail.com",
-      "department": "IT"
-    },
-        {
-      "id": "9b16",
-      "name": "ziad",
-      "age": 2,
-      "salary": 200,
-      "phone": "50505050",
-      "email": "ziad7b2loz@gmail.com",
-      "department": "IT"
-    },
-        {
-      "id": "9b16",
-      "name": "ziad",
-      "age": 2,
-      "salary": 200,
-      "phone": "50505050",
-      "email": "ziad7b2loz@gmail.com",
-      "department": "IT"
+    {
+      "id": "2f85",
+      "name": "ziad Ibrahim",
+      "age": 22,
+      "salary": 80000,
+      "phone": "01556944841",
+      "email": "A@gmail.com",
+      "department": "CS"
     }
   ],
-  "courses": [],
-  "instructors": []
+  "courses": [
+    {
+      "id": "CS101",
+      "name": "Introduction to Computer Science",
+      "description": "Basic concepts of programming and computational thinking",
+      "credits": 3,
+      "department": "IT",
+      "instructor": "Dr. Ahmed Hassan",
+      "duration": "16 weeks"
+    },
+    {
+      "id": "CS102",
+      "name": "Data Structures",
+      "description": "Intermediate and advanced data structures with algorithms",
+      "credits": 4,
+      "department": "IT",
+      "instructor": "Dr. Mohamed Ali",
+      "duration": "16 weeks"
+    },
+    {
+      "id": "CS201",
+      "name": "Database Systems",
+      "description": "Relational databases, SQL, and normalization",
+      "credits": 3,
+      "department": "CS",
+      "instructor": "Dr. Hisham",
+      "duration": "12 weeks"
+    },
+    {
+      "id": "8479",
+      "name": "asdasjfn",
+      "description": "22",
+      "credits": 80000,
+      "department": "asdasdas",
+      "instructor": "A@gmail.com",
+      "duration": "IT"
+    }
+  ],
+  "instructors": [
+    {
+      "name": "Dr. Ahmed Hassa",
+      "age": 45,
+      "salary": 50000,
+      "phone": "0123456789",
+      "email": "ahmed.hassan@university.edu",
+      "department": "IT",
+      "id": "INS001"
+    },
+    {
+      "id": "INS002",
+      "name": "Dr. Mohamed Ali",
+      "age": 42,
+      "salary": 48000,
+      "phone": "0198765432",
+      "email": "mohamed.ali@university.edu",
+      "department": "IT"
+    },
+    {
+      "id": "INS003",
+      "name": "Dr. Hisham Abdelrahman",
+      "age": 50,
+      "salary": 60000,
+      "phone": "01122334455",
+      "email": "hisham@university.edu",
+      "department": "CS"
+    }
+  ]
 }
