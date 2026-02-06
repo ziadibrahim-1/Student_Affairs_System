@@ -32,28 +32,26 @@ export default class StudentView {
   }
 
   bindHandlers({ onAdd, onEdit, onDelete, onSearch, onPageChange, onSort }) {
-    // Open "Add" modal
+    
     this.addBtn.addEventListener("click", () => onAdd());
 
-    // Search
+    
     this.searchInput.addEventListener("input", (e) => onSearch(e.target.value));
 
-    // Pagination
     this.prevBtn.addEventListener("click", () => onPageChange(-1));
     this.nextBtn.addEventListener("click", () => onPageChange(+1));
 
-    // Sort
     document.querySelectorAll("th[data-sort]").forEach((th) => {
       th.addEventListener("click", () => onSort(th.dataset.sort));
     });
 
-    // Modal close
+    
     this.cancelBtn.addEventListener("click", () => this.closeModal());
     this.modal.addEventListener("click", (e) => {
       if (e.target === this.modal) this.closeModal();
     });
 
-    // Save (Add/Edit)
+    
     this.saveBtn.addEventListener("click", (e) => {
       e.preventDefault();
 
@@ -64,12 +62,12 @@ export default class StudentView {
       else onEdit(this.state.editingId, payload.data);
     });
 
-    // Row actions (Edit/Delete)
+
     this.tbody.addEventListener("click", (e) => {
       const btn = e.target.closest("button[data-action]");
       if (!btn) return;
 
-      const id = btn.dataset.id; // keep as string
+      const id = btn.dataset.id; 
       const action = btn.dataset.action;
 
       if (action === "edit") onEdit(id);
@@ -175,7 +173,6 @@ export default class StudentView {
     this.mEmail.value = student?.email ?? "";
     this.mDepartment.value = student?.department ?? "";
 
-    // Focus first input (nice UX)
     setTimeout(() => this.mName.focus(), 0);
   }
 

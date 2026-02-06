@@ -23,21 +23,19 @@ export default class StudentController {
   }
 
   async handleAdd(payload) {
-    // open modal
+
     if (!payload) {
       this.view.state.editingId = null;
       this.view.openModal({ title: "Add Student", student: null });
       return;
     }
 
-    // create
     await this.service.create(payload);
     this.view.closeModal();
     await this.reload();
   }
 
   async handleEdit(idOrPayload, payload) {
-    // open edit modal (clicked edit icon)
     if (payload == null && typeof idOrPayload === "string") {
       const id = idOrPayload;
       const current = this.view.state.all.find((x) => String(x.id) === String(id));
@@ -46,10 +44,9 @@ export default class StudentController {
       return;
     }
 
-    // save edit (clicked Save in modal)
+    
     const id = idOrPayload;
 
-    // Important: include id in body to be safe with json-server
     await this.service.update(id, { ...payload, id });
 
     this.view.closeModal();
